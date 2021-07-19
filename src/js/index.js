@@ -6,5 +6,4 @@ $(function () {
     setTimeout(function () {
         $('.site_title_space').fadeIn();
     }, 1000);
-
 });
