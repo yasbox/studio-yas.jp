@@ -21,6 +21,9 @@
 
 .article_space {
     .imgbox {
+        height: 200px;
+        overflow: hidden;
+
         img {
             width: 100%;
         }

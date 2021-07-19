@@ -1,6 +1,12 @@
 <?php get_header(); ?>
 
 <div class="fullscreen">
+    <div class="site_top_space">
+        <div class="site_title_space">
+            <div class="site_title"><?php bloginfo('name'); ?></div>
+            <div class="site_title_sub">Simple is the best.</div>
+        </div>
+    </div>
     <canvas id="canvas_container"></canvas>
     <div id="obj_container">
         <div id="objbox0" class="menubox">

@@ -1,63 +1,6 @@
 /*!****************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./src/sass/index.scss ***!
   \****************************************************************************************************************************************************************************************************************/
-@charset "UTF-8";
-/*　ナビゲーション　*/
-nav {
-  position: fixed;
-  margin: 1rem 0;
-  width: 100%;
-  z-index: 9;
-}
-nav .nav_box {
-  position: relative;
-  margin: 0;
-  padding: 0 2rem;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-}
-nav .site-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  margin: 0 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-nav .site-title a {
-  color: #333;
-}
-nav #main-nav {
-  margin: 0;
-  width: 100%;
-  text-align: right;
-}
-nav #main-nav li {
-  padding: 1rem 0.5rem;
-  list-style-type: none;
-  display: inline-block;
-}
-nav #main-nav a {
-  width: 100%;
-  height: 100%;
-  padding: 5px;
-  font-size: 0.9rem;
-  color: #333;
-  letter-spacing: 1px;
-  text-align: center;
-  border-bottom: 2px solid transparent;
-  display: inline-block;
-  transition: 0.5s;
-}
-nav #main-nav li a:hover {
-  border-bottom: 2px solid #388bf1;
-}
-
 #page_title {
   margin: 2rem 0;
 }
@@ -96,10 +39,6 @@ nav #main-nav li a:hover {
   letter-spacing: 1px;
 }
 
-main {
-  background-color: #222;
-}
-
 .fullscreen {
   height: 100vh;
   left: 0;
@@ -109,8 +48,38 @@ main {
   width: 100%;
 }
 
+.site_top_space {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  width: 100%;
+}
+.site_top_space .site_title_space {
+  display: none;
+}
+.site_top_space .site_title_space .site_title {
+  color: #388bf1;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.site_top_space .site_title_space .site_title_sub {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  padding: 0 0.5rem;
+  text-align: left;
+}
+
 #canvas_container, #obj_container {
-  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.2);
   height: 100vh;
   left: 0;
   position: absolute;
@@ -119,7 +88,7 @@ main {
 }
 
 .menubox {
-  background-color: #f9f9f9;
+  background-color: rgba(252, 252, 252, 0.9);
   border-radius: 100px;
   -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -141,18 +110,15 @@ main {
 }
 
 .menubox a {
-  color: #333;
+  color: #41648b;
   display: inline-block;
   font-size: 13px;
   height: 100%;
   letter-spacing: 2px;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   width: 100%;
 }
 
-.menubox:hover a {
-  color: #333;
-  font-size: 14px;
+.menubox:hover {
+  background-color: #fff;
 }
