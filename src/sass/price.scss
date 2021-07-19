@@ -1,0 +1,60 @@
+@import'common';
+
+.price_box {
+    margin: 2.0rem 0;
+    padding: 4.0rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+    @include md {
+        margin: 1.0rem 0;
+        padding: 2.0rem 0.5rem;
+    }
+
+    small {
+        font-size: 0.7rem;
+        color: #888;
+        letter-spacing: 1px;
+    }
+}
+.price_box_title {
+    h2 {
+        margin: 1.0rem 0;
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}
+.price_box_row {
+    margin: 5.0rem 0;
+
+    @include md {
+        margin: 2.0rem 0;
+    }
+}
+.item_title {
+    margin-bottom: 1.0rem;
+    padding-left: 1.0rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: $textlight;
+    letter-spacing: 1px;
+    border-left: 5px solid $mycolor;
+}
+.item_row {
+    min-height: 4.0rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid #eee;
+}
+.item_row:last-child {
+    border-bottom: 1px solid #eee;
+}
+
+.item_name {
+    font-size: 0.9rem;
+}
+.item_price {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-align: right;
+}

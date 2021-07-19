@@ -1,0 +1,31 @@
+@import'common';
+
+.about_box {
+    margin: 2.0rem 0;
+    padding: 4.0rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+    @include md {
+        margin: 1.0rem 0;
+        padding: 2.0rem 0.5rem;
+    }
+}
+.box_title {
+    margin-bottom: 2.0rem;
+
+    h2 {
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    small {
+        font-size: 1.0rem;
+    }
+}
+.box_text {
+    p {
+        font-size: 1.0rem;
+        color: #555;
+        letter-spacing: 1px;
+    }
+}

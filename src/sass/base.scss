@@ -1,0 +1,75 @@
+@import'set';
+
+*{
+    box-sizing: border-box;
+    
+    font-family: メイリオ, Meiryo, ヒラギノ角ゴ ProN W3, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic ProN, Hiragino Kaku Gothic Pro, verdana, ＭＳ\ Ｐゴシック, sans-serif;
+}
+html {
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    color: $textbase;
+    background-color: $bgtcolor;
+
+    /*フッター固定用*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*　ヘッダー　*/
+header {
+    height: 100px;
+
+    /*　フレックス子　*/
+    flex: 0 1 auto;
+}
+
+/*　メイン　*/
+main {
+
+    /*　フレックス子　*/
+    flex: 1 0 auto;
+}
+
+/*　フッター　*/
+footer {
+
+    /*　フレックス子　*/
+    flex: 0 1 auto;
+}
+
+
+h1 {
+    font-size: 2.2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+h5 {
+    font-size: 1.0rem;
+}
+@media screen and ( max-width: 768px ) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+

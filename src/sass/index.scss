@@ -1,0 +1,58 @@
+@import'common';
+
+main {
+    background-color: #222;
+}
+
+.fullscreen {
+    position: relative;
+	top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#canvas_container, #obj_container {
+    position: absolute;
+	top: -50vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+}
+
+.menubox {
+    position: absolute;
+	top: 0px;
+    left: 0px;
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 100px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+
+   @include md {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+}
+.menubox a {
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #333;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.menubox:hover a {
+    font-size: 14px;
+    color: #333;
+}

@@ -1,0 +1,30 @@
+$xl: 1200px; // PCワイド
+$lg: 992px; // PC
+$md: 768px; // タブレット
+$sm: 576px;  // スマホ
+
+@mixin xl {
+    @media (max-width: ($xl)) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: ($lg)) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: ($md)) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: ($sm)) {
+        @content;
+    }
+}
+
+$mycolor: #388bf1;
+$textbase: #3c3a0b;
+$textlight: #41648b;
+$bgtcolor: #eaeff7;
