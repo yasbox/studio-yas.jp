@@ -3,13 +3,20 @@
 .works_space {
     margin: 4.0rem 0;
     width: 100%;
-
     display: flex;
+    flex-wrap: wrap;
 }
 
 .work_box {
     padding: 15px;
     width: 33.333%;
+
+    @include md {
+        width: 50%;
+    }
+    @include sm {
+        width: 100%;
+    }
 }
 
 .work_box_in {
@@ -21,11 +28,12 @@
 
 .article_space {
     .imgbox {
-        height: 200px;
-        overflow: hidden;
+        padding: 10px 0;
+        background-color: #f9f9f9;
 
         img {
             width: 100%;
+            object-fit: contain;
         }
     }
     .info_space {

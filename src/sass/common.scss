@@ -1,16 +1,30 @@
 @import'set';
 
+.container {
+    max-width: 1200px;
+}
+
 #page_title {
-    margin: 2.0rem 0;
+    margin: 2.0rem 0 -4.0rem;
     
-    h1 {
-        color: #aaa;
-        letter-spacing: 0.5rem;
+    @include md {
+        margin: 1.0rem 0 -2.5rem;
     }
 
-    @media screen and (max-width: 768px) {
-        margin: 1.0rem 0;
+    h1 {
+        padding: 0 1.0rem;
+        font-size: 4.0rem;
+        font-weight: bold;
+        color: rgba(0,0,0,0.1);
+        letter-spacing: 0.5rem;
+        text-align: right;
+
+        @include md {
+            font-size: 3.0rem;
+        }
     }
+
+    
 }
 
 .contents_box {
