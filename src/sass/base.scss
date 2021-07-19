@@ -1,17 +1,15 @@
 @import'set';
 
-*{
-    box-sizing: border-box;
-    
-    font-family: メイリオ, Meiryo, ヒラギノ角ゴ ProN W3, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic ProN, Hiragino Kaku Gothic Pro, verdana, ＭＳ\ Ｐゴシック, sans-serif;
-}
 html {
     margin: 0px;
+    box-sizing: border-box;
 }
 body {
     margin: 0px;
     color: $textbase;
     background-color: $bgtcolor;
+
+    font-family: 'M PLUS Rounded 1c', メイリオ, Meiryo, ヒラギノ角ゴ ProN W3, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic ProN, Hiragino Kaku Gothic Pro, verdana, ＭＳ\ Ｐゴシック, sans-serif;
 
     /*フッター固定用*/
     min-height: 100vh;
@@ -45,6 +43,9 @@ footer {
     flex: 0 1 auto;
 }
 
+p,span,h1,h2,h3,h4,h5 {
+    transform: rotate(0.03deg);
+}
 
 h1 {
     font-size: 2.2rem;
