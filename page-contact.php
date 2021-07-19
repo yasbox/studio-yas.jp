@@ -8,16 +8,13 @@
 
 <section id="about_me">
     <div class="container">
-        <div class="about_box">
-            <div class="box_title">
-                <h2><?php bloginfo('name'); ?> <small>について</small></h2>
+        <div class="contents_box">
+            <div class="contents_box_title">
+                <h2>お問い合わせ</h2>
             </div>
             <div class="box_text">
                 <p>
-                    <?php bloginfo('name'); ?> は、WEB制作を中心に様々なクリエイト活動をしています。
-                </p>
-                <p>
-                    ホームページ制作、WEBアプリケーション開発、写真撮影、写真デジタル加工、写真アルバム制作　など。
+                    お問い合わせはこちらから
                 </p>
             </div>
         </div>

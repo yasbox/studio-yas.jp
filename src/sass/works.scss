@@ -1,31 +1,45 @@
 @import'common';
 
-.about_box {
-    margin: 2.0rem 0;
-    padding: 4.0rem;
-    background-color: #fff;
+.works_space {
+    margin: 4.0rem 0;
+    width: 100%;
+
+    display: flex;
+}
+
+.work_box {
+    padding: 15px;
+    width: 33.333%;
+}
+
+.work_box_in {
+    width: 100%;
     border-radius: 10px;
-
-    @include md {
-        margin: 1.0rem 0;
-        padding: 2.0rem 0.5rem;
-    }
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
-.box_title {
-    margin-bottom: 2.0rem;
 
-    h2 {
-        text-align: center;
-        letter-spacing: 1px;
+.article_space {
+    .imgbox {
+        img {
+            width: 100%;
+        }
     }
-    small {
-        font-size: 1.0rem;
-    }
-}
-.box_text {
-    p {
-        font-size: 1.0rem;
-        color: #555;
-        letter-spacing: 1px;
+    .info_space {
+        padding: 0.5rem;
+
+        h5 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: $textlight;
+        }
+        a {
+            font-size: 0.8rem;
+            word-break: break-all;
+        }
+        p {
+            font-size: 0.9rem;
+            color: #555;
+        }
     }
 }

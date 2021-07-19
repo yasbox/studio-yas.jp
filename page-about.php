@@ -8,8 +8,8 @@
 
 <section id="about_me">
     <div class="container">
-        <div class="about_box">
-            <div class="box_title">
+        <div class="contents_box">
+            <div class="contents_box_title">
                 <h2><?php bloginfo('name'); ?> <small>について</small></h2>
             </div>
             <div class="box_text">

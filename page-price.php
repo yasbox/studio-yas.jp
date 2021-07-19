@@ -8,11 +8,11 @@
 
 <section id="web_price">
     <div class="container">
-        <div class="price_box">
-            <div class="price_box_title">
+        <div class="contents_box">
+            <div class="contents_box_title">
                 <h2>WEB制作</h2>
             </div>
-            <div class="row price_box_row">
+            <div class="row contents_box_row">
                 <div class="col-md-5">
                     <div class="item_title">
                         ホームページ制作
@@ -96,7 +96,7 @@
                 </div>
             </div>
 
-            <div class="row price_box_row">
+            <div class="row contents_box_row">
                 <div class="col-md-5">
                     <div class="item_title">
                         Webシステム開発
@@ -170,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="row price_box_row">
+            <div class="row contents_box_row">
                 <div class="col-md-5">
                     <div class="item_title">
                         サーバ関連
@@ -221,7 +221,7 @@
                 </div>
             </div>
 
-            <div class="row price_box_row">
+            <div class="row contents_box_row">
                 <div class="col-md-5">
                     <div class="item_title">
                         その他
@@ -262,11 +262,11 @@
 
 <section id="design_price">
     <div class="container">
-        <div class="price_box">
-            <div class="price_box_title">
+        <div class="contents_box">
+            <div class="contents_box_title">
                 <h2>デザイン制作</h2>
             </div>
-            <div class="row price_box_row">
+            <div class="row contents_box_row">
                 <div class="col-md-5">
                     <div class="item_title">
                         印刷物など
