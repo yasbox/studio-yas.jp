@@ -111,7 +111,7 @@ $(function () {
 
     setTimeout(function () {
         loop();
-    }, 500);
+    }, 1000);
     
 
 });
