@@ -9,7 +9,7 @@ body {
     color: $textbase;
     background-color: $bgtcolor;
 
-    font-family: 'M PLUS Rounded 1c', メイリオ, Meiryo, ヒラギノ角ゴ ProN W3, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic ProN, Hiragino Kaku Gothic Pro, verdana, ＭＳ\ Ｐゴシック, sans-serif;
+    font-family: メイリオ, Meiryo, ヒラギノ角ゴ ProN W3, ヒラギノ角'Noto Sans JP'ゴ Pro W3, Hiragino Kaku Gothic ProN, Hiragino Kaku Gothic Pro, verdana, ＭＳ\ Ｐゴシック, sans-serif;
 
     /*フッター固定用*/
     min-height: 100vh;
@@ -43,7 +43,8 @@ footer {
     flex: 0 1 auto;
 }
 
-p,span,h1,h2,h3,h4,h5 {
+h1,h2,h3,h4,h5 {
+    font-family: 'Noto Sans JP', sans-serif;
     transform: rotate(0.03deg);
 }
 

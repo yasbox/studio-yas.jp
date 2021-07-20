@@ -3,8 +3,8 @@
 <div class="fullscreen">
     <div class="site_top_space">
         <div class="site_title_space">
-            <div class="site_title"><?php bloginfo('name'); ?></div>
-            <div class="site_title_sub">Simple is the best.</div>
+            <h1 class="site_title"><?php bloginfo('name'); ?></h1>
+            <h3 class="site_title_sub">Simple is the best.</h3>
         </div>
     </div>
     <canvas id="canvas_container"></canvas>
