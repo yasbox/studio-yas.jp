@@ -28,3 +28,38 @@ $(function () {
         }
     });
 });
+
+
+// ローディングcircle
+$(window).on('load', function () {
+
+    // 最大サークルサイズ算出
+    let circle_size = 0;
+    if ($(window).width() > $(window).height()) {
+        circle_size = $(window).width() * 1.5;
+    } else {
+        circle_size = $(window).height() * 1.5;
+    }
+    // サークルサイズ設定
+    $('.open_circle').css({
+        'width': circle_size,
+        'height': circle_size
+    });
+
+    // サークルサイズを大きくしていく
+    let count = 0;
+    const countUp = () => {
+        count++;
+
+        $('.open_circle').css({
+            'background': `radial-gradient(rgba(0,0,0,0) ${count}%, #fff ${count + 5}%)`
+        });
+    }
+    const intervalId = setInterval(() => {
+        countUp();
+        if (count > 100) {
+            clearInterval(intervalId);
+            $('.loading_wrap').hide();
+        }
+    }, 10);
+});

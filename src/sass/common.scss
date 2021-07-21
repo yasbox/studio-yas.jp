@@ -23,8 +23,6 @@
             font-size: 3.0rem;
         }
     }
-
-    
 }
 
 .contents_box {
@@ -48,7 +46,25 @@
     h2 {
         margin: 1.0rem 0;
         text-align: center;
-        font-weight: bold;
         letter-spacing: 1px;
+    }
+}
+
+.loading_wrap {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200vw;
+    height: 200vh;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .open_circle {
+        width: 150vw;
+        height: 150vh;
+        background: radial-gradient(rgba(0,0,0,0) 0%, #fff 5%);
     }
 }

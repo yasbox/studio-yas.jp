@@ -44,7 +44,8 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
                         <!--サイトタイトル-->
                         <div class="site-title">
                             <a href="<?php echo home_url(); ?>">
-                                <?php bloginfo('name'); ?>
+                                <div class="site_logo"><img src="<?php echo get_the_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
+                                <div class="site_text_logo"><img src="<?php echo get_the_text_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
                             </a>
                         </div>
 

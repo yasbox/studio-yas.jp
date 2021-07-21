@@ -3,8 +3,9 @@
 <div class="fullscreen">
     <div class="site_top_space">
         <div class="site_title_space">
-            <h1 class="site_title"><?php bloginfo('name'); ?></h1>
-            <h3 class="site_title_sub">Simple is the best.</h3>
+            <div class="site_logo"><img src="<?php echo get_the_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
+            <div class="site_text_logo"><img src="<?php echo get_the_text_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
+            <div class="site_title_sub">Simple is the best.</div>
         </div>
     </div>
     <canvas id="canvas_container"></canvas>

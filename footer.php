@@ -1,5 +1,11 @@
 </main>
 
+<section>
+    <div class="loading_wrap">
+        <div class="open_circle"></div>
+    </div>
+</section>
+
 <?php
 $commonJSPath = '/dist/js/common.js';
 $includeJSPath = '/dist/js/' . get_post_meta(get_the_ID(), 'includeJS', true) . '.js';

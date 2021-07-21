@@ -18,18 +18,29 @@
     justify-content: center;
 
     .site_title_space {
+        width: 60%;
+        max-width: 400px;
         display: none;
         
-        .site_title {
-            font-size: 3.0rem;
-            letter-spacing: 1px;
-            color: $mycolor;
-            font-weight: bold;
-            text-align: center;
+        .site_logo {
+            margin-right: 10px;
+            display: inline-block;
+
+            img {
+                height: 50px;
+            }
+        }
+        .site_text_logo {
+            display: inline-block;
+
+            img {
+                height: 50px;
+            }
         }
         .site_title_sub {
-            padding: 0 0.5rem;
-            font-size: 0.9rem;
+            margin: 0.5rem;
+            padding-left: 60px;
+            font-size: 0.8rem;
             font-weight: lighter;
             letter-spacing: 2px;
             text-align: left;
