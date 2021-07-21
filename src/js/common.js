@@ -52,7 +52,7 @@ $(window).on('load', function () {
         count++;
 
         $('.open_circle').css({
-            'background': `radial-gradient(rgba(0,0,0,0) ${count}%, #fff ${count + 5}%)`
+            'background': `radial-gradient(rgba(0,0,0,0) ${count}%, rgba(255,255,255,1) ${count + 5}%)`
         });
     }
     const intervalId = setInterval(() => {
