@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "webpack --mode production",
-    "dev": "webpack --mode development",
+    "dev": "webpack --mode development --devtool=source-map",
     "watch": "webpack --mode development --watch"
   },
   "keywords": [],
@@ -14,16 +14,16 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
-    "css-loader": "^6.0.0",
-    "cssnano": "^5.0.6",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "glob": "^7.1.7",
+    "mini-css-extract-plugin": "^2.1.0",
+    "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
     "sass": "^1.35.2",
     "sass-loader": "^12.1.0",
-    "webpack": "^5.44.0",
+    "webpack": "^5.45.1",
     "webpack-cli": "^4.7.2",
     "webpack-fix-style-only-entries": "^0.6.1"
-  },
-  "dependencies": {
-    "mini-css-extract-plugin": "^2.1.0"
   }
 }

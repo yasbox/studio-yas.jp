@@ -3,22 +3,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const glob = require("glob");
-
-
-const basePath = path.resolve(__dirname, './');
-const targetDir = ['src'];
-
-const targets = glob.sync(`${basePath}/+(${targetDir.join('|')})/*.js`);
-const entries = {};
-
-targets.forEach((value) => {
-    const re = new RegExp(`${basePath}/`);
-    const key = value.replace(re, '');
-    entries[key] = value;
-});
-
-
 
 module.exports = {
     // node_modules を監視（watch）対象から除外
@@ -30,7 +14,16 @@ module.exports = {
     // コンパイルモード
     mode: 'none',
     // エントリーポイントの設定
-    entry: entries,
+    entry: {
+        'common': path.resolve(__dirname, "./src/js/common.js"),
+        'index': path.resolve(__dirname, "./src/js/index.js"),
+        'base.css': path.resolve(__dirname, './src/sass/base.scss'),
+        'index.css': path.resolve(__dirname, './src/sass/index.scss'),
+        'price.css': path.resolve(__dirname, './src/sass/price.scss'),
+        'about.css': path.resolve(__dirname, './src/sass/about.scss'),
+        'works.css': path.resolve(__dirname, './src/sass/works.scss'),
+        'contact.css': path.resolve(__dirname, './src/sass/contact.scss'),
+    },
     // 出力先の設定
     output: {
         path: path.resolve(__dirname, './dist/'),

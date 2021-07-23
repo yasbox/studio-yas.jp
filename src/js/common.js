@@ -42,8 +42,8 @@ $(window).on('load', function () {
     }
     // サークルサイズ設定
     $('.open_circle').css({
-        'width': circle_size,
-        'height': circle_size
+        'min-width': circle_size,
+        'min-height': circle_size
     });
 
     // サークルサイズを大きくしていく
