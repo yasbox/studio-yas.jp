@@ -1,4 +1,4 @@
-import * as canvas_script from './canvas_script';
+import * as canvas_script from './modules/canvas_script';
 
 $(function () {
 
