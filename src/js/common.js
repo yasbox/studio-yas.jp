@@ -46,13 +46,17 @@ $(window).on('load', function () {
         'min-height': circle_size
     });
 
+    $('.loading_wrap').css({
+        'background-color': 'transparent',
+    });
+
     // サークルサイズを大きくしていく
     let count = 0;
     const countUp = () => {
         count++;
 
         $('.open_circle').css({
-            'background': `radial-gradient(rgba(255,255,255,0) ${count}%, rgba(255,255,255,1) ${count + 5}%)`
+            'background': `radial-gradient(rgba(234,239,247,0) ${count}%, rgba(234,239,247,1) ${count + 5}%)`
         });
     }
     const intervalId = setInterval(() => {

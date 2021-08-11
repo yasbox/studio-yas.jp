@@ -57,6 +57,8 @@
     width: 100vw;
     height: 100vh;
     z-index: 999;
+    pointer-events: none;
+    background-color: $bgtcolor;
 
     display: flex;
     align-items: center;
@@ -65,6 +67,6 @@
     .open_circle {
         width: 0;
         height: 0;
-        background: radial-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,1) 5%);
+        background: radial-gradient(rgba(234,239,247,0) 0%, rgba(234,239,247,1) 5%);
     }
 }

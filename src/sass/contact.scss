@@ -1,2 +1,35 @@
 @import'modules/common';
 
+.box_text {
+    margin: 2.0rem 0;
+}
+
+.form_wrap {
+    margin: 2.0rem auto;
+    max-width: 600px;
+
+    label {
+        font-size: 0.8rem;
+    } 
+}
+
+.button_space {
+    margin: 2.0rem 0;
+    text-align: center;
+}
+
+
+
+.error_messege {
+    color: #f00;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+.grecaptcha_info {
+    margin: 1.0rem 0;
+    font-size: 0.7rem;
+    color: #888;
+    text-align: center;
+}

@@ -69,7 +69,24 @@ function get_the_logo_url()
 }
 
 
+function set_org_query_vars($query_vars)
+{
+    $query_vars[] = 'customer_name';
+    $query_vars[] = 'email';
+    $query_vars[] = 'comment';
 
+    return $query_vars;
+}
+add_filter('query_vars', 'set_org_query_vars');
+
+//SESSION 開始
+function init_session_start()
+{
+    if (!session_id()) {
+        session_start();
+    }
+}
+add_action('init', 'init_session_start');
 
 
 
