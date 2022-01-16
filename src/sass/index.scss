@@ -21,17 +21,13 @@
         width: 60%;
         max-width: 400px;
         display: none;
-
-        @include md {
-            width: 70%;
-        }
         
         .site_logo {
             margin-right: 10px;
             display: inline-block;
 
             @include md {
-                margin: 0 0 20px;
+                margin: 0;
                 display: block;
                 text-align: center;
             }
@@ -44,28 +40,29 @@
                 }
             }
         }
-        .site_text_logo {
-            display: inline-block;
-
-            img {
-                height: 50px;
-
-                @include md {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
         .site_title_sub {
             margin: 0.5rem;
-            padding-left: 60px;
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: lighter;
             letter-spacing: 2px;
             text-align: left;
+            color: #000;
+            display: inline-block;
 
             @include md {
-                padding-left: 0px;
+                display: block;
+            }
+        }
+        .site_text_logo {
+            margin: 1.0rem 0;
+            display: inline-block;
+
+            @include md {
+                margin: 0;
+            }
+            
+            img {
+                width: 100%;
             }
         }
     }

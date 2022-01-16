@@ -1,20 +1,20 @@
 // メニューボタン
 $(function () {
     //　ボタンクリックで開閉
-    $('#menu_button').click(function () {
-        $(this).next('#menu_list').stop(true, true).slideToggle();
+    $('#mobile_menu_btn').click(function () {
+        $('#main-nav').stop(true, true).slideToggle();
     });
     //　画面をクリックで閉じる
     $(document).on("touchstart click", function (e) {
-        if (!$(e.target).is('#menu_button, #menu_list')) {
+        if (!$(e.target).is('#mobile_menu_btn, #main-nav')) {
             var windowSize = $(window).width();
-            if ($('#menu_list').is(':visible') && windowSize < 768) {
-                $('#menu_list').slideUp();
+            if ($('#main-nav').is(':visible') && windowSize < 768) {
+                $('#main-nav').slideUp();
             }
         }
     });
     //　親要素への伝搬を無効にする（画面クリック判定用）
-    $(document).on('touchstart click', '#menu_button', function (e) {
+    $(document).on('touchstart click', '#mobile_menu_btn', function (e) {
         e.stopPropagation();
     })
 
@@ -22,9 +22,9 @@ $(function () {
     $(window).on('resize', function () {
         var windowSize = $(window).width();
         if (windowSize > 768) {
-            $('#menu_list').show();
+            $('#main-nav').show();
         } else {
-            $('#menu_list').hide();
+            $('#main-nav').hide();
         }
     });
 });

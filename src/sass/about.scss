@@ -1,11 +1,11 @@
 @import'modules/common';
 
-.box_text {
-    margin: 4.0rem 0;
-    
-    p {
-        font-size: 1.0rem;
-        color: #555;
-        letter-spacing: 1px;
+#about_me {
+    .box_right {
+        padding-left: 3.0rem;
+
+        @include md {
+            padding-left: 0;
+        }
     }
 }

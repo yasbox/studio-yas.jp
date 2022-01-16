@@ -25,7 +25,7 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
 
         gtag('config', 'G-6JEXCD29PQ');
     </script>
-    
+
     <!--　fonts　-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,12 +62,12 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
                     <div class="nav_box">
 
                         <!--サイトタイトル-->
-                        <div class="site-title">
-                            <a href="<?php echo home_url(); ?>">
+                        <a href="<?php echo home_url(); ?>">
+                            <div class="site-title">
                                 <div class="site_logo"><img src="<?php echo get_the_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
                                 <div class="site_text_logo"><img src="<?php echo get_the_text_logo_url(); ?>" alt="<?php bloginfo('name'); ?>" /></div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
 
                         <!--ヘッダーメニュー-->
                         <?php wp_nav_menu(array(
@@ -80,6 +80,19 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
                             'fallback_cb' => ''
                         ));
                         ?>
+
+                        <!--メニューボタン-->
+                        <div class="top_nav_item">
+                            <div class="mobile_menu_icon" id="mobile_menu_btn">
+                                <div class="mobile_menu_img">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div id="close_btn">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>

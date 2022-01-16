@@ -20,7 +20,7 @@ require_once(dirname(__FILE__) . '/sendMailPack/Controller/contactController.php
             <div class="form_wrap">
                 <div class="box_text">
                     <p>
-                        Studio YAS に関するあらゆるご質問・お問い合わせはこちらからお願い致します。
+                        <?php bloginfo('name'); ?> に関するあらゆるご質問・お問い合わせはこちらからお願い致します。
                     </p>
                 </div>
                 <form name="contactForm" id="contactForm" method="post" action="<?= site_url('/confirm'); ?>">
