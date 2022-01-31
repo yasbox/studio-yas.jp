@@ -2,7 +2,7 @@
 
 // navバーを有効化
 register_nav_menu('main-menu', 'メインメニュー');
-register_nav_menu('footer-nav',  ' フッターナビゲーション ');
+register_nav_menu('footer-nav',  'フッターナビゲーション');
 
 // アイキャッチを有効化
 add_theme_support('post-thumbnails');

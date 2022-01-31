@@ -1,16 +1,6 @@
-@import'modules/common';
+@import'contact';
 
-.box_text {
-    margin: 2.0rem 0;
+.form-control {
+    height: auto;
+    border: none;
 }
-
-.form_wrap {
-    margin: 2.0rem auto;
-    max-width: 600px;
-}
-
-.button_space {
-    margin: 2.0rem 0;
-    text-align: center;
-}
-

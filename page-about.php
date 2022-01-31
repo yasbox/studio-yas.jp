@@ -6,6 +6,14 @@
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="contents_box_title">
+            <h2><?php bloginfo('name'); ?>について</h2>
+        </div>
+    </div>
+</section>
+
 <section id="about_me">
     <div class="container">
         <div class="contents_box">
@@ -18,11 +26,14 @@
                 <div class="col-md box_center_center">
                     <div class="box_right">
                         <div class="box_title">
-                            <h2><?php bloginfo('name'); ?> は、WEB制作を中心に様々なクリエイト活動をしています</h2>
+                            <h3><span><?php bloginfo('name'); ?> は</span><br>
+                                <span>WEB制作を中心に様々な</span><br>
+                                <span>クリエイト活動をしています</span>
+                            </h3>
                         </div>
                         <div class="box_text">
                             <p>
-                                ホームページ制作、WEBアプリケーション開発、写真撮影、写真デジタル加工、写真アルバム制作　など
+                                ホームページ制作、WEBアプリケーション開発、写真撮影、写真デジタル加工、写真アルバム制作…etc
                             </p>
                         </div>
                     </div>

@@ -1,5 +1,6 @@
 <?php
 $commonCSSPath = '/dist/css/base.css';
+$singleCSSPath = '/dist/css/single.css';
 $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true) . '.css';
 ?>
 
@@ -30,6 +31,7 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
     <!--　スタイルシート　-->
     <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -37,8 +39,11 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
 
     <?php if (file_exists(get_template_directory() . $includeCSSPath)) : ?>
         <?php echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . $includeCSSPath . '?' . date('YmdHis', filemtime(get_template_directory() . $includeCSSPath)) . '">'; ?>
-
     <?php endif ?>
+
+    <?php if (is_single()) : ?>
+        <?php echo '<link rel="stylesheet" type="text/css" href="' . get_template_directory_uri() . $singleCSSPath . '?' . date('YmdHis', filemtime(get_template_directory() . $singleCSSPath)) . '">'; ?>
+    <?php endif; ?>
 
     <!--　jQuery　-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

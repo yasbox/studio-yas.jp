@@ -1,0 +1,75 @@
+@import'modules/common';
+
+.return_btn_space {
+    padding: 5px 80px;
+    display: flex;
+
+    @include md {
+        padding: 5px 30px;
+    }
+
+    .return_btn {
+        cursor: pointer;
+
+        img {
+            width: 40px;
+            filter: invert(76%) sepia(30%) saturate(473%) hue-rotate(168deg) brightness(93%) contrast(105%);
+            transition: 0.5s;
+        }
+    }
+    .return_btn:hover {
+        img {
+            filter: invert(58%) sepia(75%) saturate(2384%) hue-rotate(177deg) brightness(88%) contrast(105%);
+        }
+    }
+}
+
+.container {
+    max-width: 1000px;
+}
+
+.article-img {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.work_url {
+    margin: 0 0 2.0rem;
+    text-align: center;
+
+    a {
+        color: $mycolor;
+        font-size: 1.2rem;
+    }
+}
+
+h3 {
+    margin-top: 3.0rem;
+    padding: 0 1.6rem;
+    border-left: 10px solid $mycolor;
+    font-size: 1.6rem;
+
+    @include md {
+        font-size: 1.4rem;
+    }
+}
+
+.wp-block-image {
+    margin: 3.0rem 0 5.0rem !important;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    @include md {
+        margin: 1.0rem 0 2.0rem !important;
+    }
+
+    img {
+        width: 90%;
+
+        @include md {
+            width: 100%;
+        }
+    }
+}

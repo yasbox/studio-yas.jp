@@ -1,23 +1,92 @@
 @import'modules/common';
 
-.box_text {
-    margin: 2.0rem 0;
+.contents_box {
+    margin: 2.0rem auto;
+    padding: 2.0rem;
+    max-width: 900px;
+    background-color: $textlight;
+    border-radius: 10px;
+
+    @include sm {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .box_text {
+        margin: 2.0rem 0 4.0rem;
+
+        p {
+            color: #fff;
+
+            @include sm {
+                color: $textbase;
+            }
+        }
+    }
 }
 
 .form_wrap {
     margin: 2.0rem auto;
     max-width: 600px;
 
+    p {
+        color: #fff;
+
+        @include sm {
+            color: $textlight;
+        }
+    }
+
     label {
-        font-size: 0.8rem;
-    } 
+        font-size: 1.2rem;
+        color: #fff;
+        font-weight: bold;
+
+        @include sm {
+            color: $textlight;
+        }
+
+        small {
+            margin-left: 1.0rem;
+            padding: 0 5px;
+            font-size: 0.8rem;
+            color: #fff;
+            background-color: #f00;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    }
+    .form-group {
+        margin-bottom: 2.0rem;
+
+        .form-control {
+            padding: 2.0rem 1.0rem;
+            font-size: 1.2rem;
+
+            @include sm {
+                padding: 1.5rem 0.5rem;
+            }
+        }
+    }
 }
 
 .button_space {
     margin: 2.0rem 0;
     text-align: center;
 }
-
+.mybtn {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    padding: 1.0rem 3.0rem;
+    border-radius: 100px;
+    background-color: $mycolor;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
 
 
 .error_messege {
@@ -30,6 +99,17 @@
 .grecaptcha_info {
     margin: 1.0rem 0;
     font-size: 0.7rem;
-    color: #888;
     text-align: center;
+
+    @include sm {
+        text-align: left;
+    }
+    
+    a {
+        color: #ccc;
+
+        @include sm {
+            color: $textlight;
+        }
+    }
 }

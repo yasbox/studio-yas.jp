@@ -85,30 +85,37 @@
     height: 100px;
     line-height: 100px;
     text-align: center;
-    background-color: rgba(252, 252, 252, 0.9);
+    //background-color: rgba(252, 252, 252, 1.0);
+    background-color: #fff;
     border-radius: 100px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s;
 
    @include md {
         width: 70px;
         height: 70px;
         line-height: 70px;
     }
-}
-.menubox a {
-    width: 100%;
-    height: 100%;
-    font-size: 13px;
-    color: $textlight;
-    letter-spacing: 2px;
-    text-decoration: none;
-    display: inline-block;
 
-    @include md {
-        font-size: 12px;
+    a {
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+        color: $textbase;
+        letter-spacing: 2px;
+        text-decoration: none;
+        display: inline-block;
+        transition: color 0.5s;
+
+        @include md {
+            font-size: 12px;
+        }
     }
 }
-
 .menubox:hover {
-    background-color: #fff;
+    background-color: $mycolorlight;
+
+    a {
+        color: #fff;
+    }
 }

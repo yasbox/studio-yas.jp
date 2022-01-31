@@ -1,5 +1,10 @@
 @import'modules/common';
 
+#past_work {
+    .container {
+        max-width: 1500px;
+    }
+}
 .works_space {
     margin: 4.0rem 0;
     width: 100%;
@@ -11,7 +16,7 @@
     padding: 15px;
     width: 33.333%;
 
-    @include md {
+    @include lg {
         width: 50%;
     }
     @include sm {
@@ -20,37 +25,49 @@
 }
 
 .work_box_in {
+    padding: 3.0rem;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    background-color: rgba($color: #fff, $alpha: 0.9);
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
     overflow: hidden;
+
+    @include xl {
+        padding: 2.0rem;
+    }
+    @include sm {
+        padding: 1.0rem;
+    }
 }
 
 .article_space {
     .imgbox {
-        padding: 10px 0;
         background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
 
         img {
             width: 100%;
+            max-height: 300px;
             object-fit: contain;
         }
     }
     .info_space {
-        padding: 0.5rem;
+        padding: 2.0rem 0.5rem 0;
 
         h5 {
             margin: 0;
-            font-size: 1.1rem;
-            color: $textlight;
+            font-size: 1.0rem;
+            color: $textbase;
         }
         a {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
+            color: $mycolorlight;
             word-break: break-all;
         }
         p {
-            font-size: 0.9rem;
-            color: #555;
+            font-size: 0.8rem;
+            color: $textlight;
         }
     }
 }

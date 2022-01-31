@@ -1,0 +1,103 @@
+/*　フッターナビゲーション　*/
+footer {
+    background-color: $textlight;
+
+    a {
+        color: #ccc;
+        transition: 0.5s;
+    }
+    a:hover {
+        color: #fff;
+    }
+
+    .footer_contents {
+        padding: 8.0rem 0 6.0rem;
+
+        .logo_space {
+            .site_logo {
+                img {
+                    width: 100px;
+                }
+            }
+            .site_text_logo {
+                img {
+                    width: 100px;
+                    filter: invert(100%) sepia(9%) saturate(7500%) hue-rotate(168deg) brightness(117%) contrast(108%);
+                }
+            }
+        }
+
+        ul li {
+            list-style: none;
+
+            a {
+                padding: 0.7rem 2.0rem;
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+                display: inline-block;
+            }
+        }
+
+        .right_space {
+            width: 100%;
+
+            p {
+                margin: 5px 0;
+                font-size: 0.9rem;
+                color: #ccc;
+                text-align: center;
+            }
+            .info {
+                text-align: center;
+
+                img {
+                    margin-bottom: 10px;
+                    width: 120px;
+                    border-radius: 50%;
+                }
+            }
+            .right_space_right {
+                p {
+                    padding: 5px;
+                    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.4);
+                }
+            }
+            .links {
+                margin: 1.0rem auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    margin: 0 10px;
+                    width: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .bottom_space {
+        padding: 10px 20px;
+        background-color: $textbase;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include md {
+            justify-content: center;
+        }
+        
+        .bottom_link {
+            padding: 10px 15px;
+            font-size: 0.7rem;
+        }
+
+        .copyright {
+            font-size: 1.0rem;
+            letter-spacing: 1px;
+            color: #aaa;
+        }
+    }
+}

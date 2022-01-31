@@ -6,20 +6,28 @@
     </div>
 </section>
 
-<section id="about_me">
+<section>
+    <div class="container">
+        <div class="contents_box_title">
+            <h2>制作実績</h2>
+        </div>
+    </div>
+</section>
+
+<section id="past_work">
     <div class="container">
         <div class="contents_box">
-            <div class="contents_box_title">
-                <h2>制作実績 <small>（順不同）</small></h2>
-            </div>
             <div class="works_space">
+
                 <?php
+
                 $args = array(
                     'posts_per_page' => 20, // 表示件数の指定
                     'orderby' => 'date', // 日付でソート
                     'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
                     'category_name' => '制作実績' // 表示したいカテゴリーのスラッグを指定
                 );
+
                 $the_query = new WP_Query($args);
                 while ($the_query->have_posts()) : $the_query->the_post(); ?>
 
@@ -31,6 +39,7 @@
 
                 <?php endwhile;
                 wp_reset_postdata(); ?>
+                
             </div>
         </div>
     </div>

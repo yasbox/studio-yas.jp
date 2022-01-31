@@ -1,35 +1,155 @@
 @import'modules/common';
 
-.contents_box_row {
-    margin: 5.0rem 0;
-
-    @include md {
-        margin: 2.0rem 0;
+#web_price_hp {
+    .contents_box_row {
+        margin-left: 15%;
+        text-align: left;
+        background-color: rgba($color: $textlight, $alpha: 0.7);
+        border-top-right-radius : 0px;
+        border-bottom-right-radius : 0px;
     }
 }
-.item_title {
-    margin-bottom: 1.0rem;
-    padding-left: 1.0rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: $textlight;
-    letter-spacing: 1px;
-    border-left: 5px solid $mycolor;
+#web_price_system {
+    .contents_box_row {
+        margin-right: 15%;
+        text-align: right;
+        background-color: rgba($color: #3b7960, $alpha: 0.7);
+        border-top-left-radius : 0px;
+        border-bottom-left-radius : 0px;
+    }
 }
-.item_row {
-    min-height: 4.0rem;
-    padding: 1.5rem 0;
-    border-top: 1px solid #eee;
+#web_price_server {
+    .contents_box_row {
+        margin-left: 15%;
+        text-align: left;
+        background-color: rgba($color: #544a47, $alpha: 0.7);
+        border-top-right-radius : 0px;
+        border-bottom-right-radius : 0px;
+    }
 }
-.item_row:last-child {
-    border-bottom: 1px solid #eee;
+#web_price_other {
+    .contents_box_row {
+        margin-right: 15%;
+        text-align: right;
+        background-color: rgba($color: #493759, $alpha: 0.7);
+        border-top-left-radius : 0px;
+        border-bottom-left-radius : 0px;
+    }
+}
+#design_price {
+    .contents_box_row {
+        margin-left: 15%;
+        text-align: left;
+        background-color: rgba($color: #bb5548, $alpha: 0.7);
+        border-top-right-radius : 0px;
+        border-bottom-right-radius : 0px;
+    }
 }
 
-.item_name {
-    font-size: 0.9rem;
+.contents_box {
+    padding: 5.0rem 0;
+
+    @include md {
+        padding: 2.0rem 0;
+    }
+
+    .container {
+        max-width: 1500px;
+        display: inline-block;
+    }
+    .contents_box_row {
+        padding: 6.0rem;
+        border-radius: 50px;
+
+        @include xl {
+            margin: 0 20px !important;
+            padding: 3.0rem !important;
+            border-radius: 30px !important;
+        }
+        @include md {
+            margin: 0 10px !important;
+            padding: 2.0rem !important;
+            border-radius: 20px !important;
+        }
+        @include sm {
+            padding: 20px 0 !important;
+            border-radius: 10px !important;
+        }
+    }
 }
-.item_price {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-align: right;
+
+.item_title {
+
+    .item_title_en {
+        font-size: 1.0rem;
+        font-weight: bold;
+        color: rgba($color: #fff, $alpha: 0.7);
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    h3 {
+        margin-top: 1.0rem;
+        font-weight: bold;
+        color: #fff;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    p {
+        font-size: 1.0rem;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #fff;
+
+        @include sm {
+            font-size: 0.9rem;
+        }
+    }
 }
+.box {
+    padding: 4.0rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+
+    @include md {
+        padding: 20px;
+    }
+
+    .item_row {
+        min-height: 4.0rem;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #eee;
+
+        .item_name {
+            font-size: 1.0rem;
+            text-align: left;
+            letter-spacing: 0px;
+            font-weight: bold;
+            color: $textlight;
+        }
+        .item_price {
+            font-size: 1.2rem;
+            color: $textbase;
+            text-align: right;
+
+            small {
+                margin-left: 5px;
+                font-size: 0.8rem;
+            }
+        }
+        small {
+            font-size: 0.7rem;
+            line-height: normal;
+            display: inline-block;
+        }
+    }
+
+    .comment {
+        margin-top: 1.0rem;
+        font-size: 0.8rem;
+        text-align: right;
+    }
+}
+
+
