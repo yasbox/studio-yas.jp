@@ -42,7 +42,11 @@ header {
 
 /*　メイン　*/
 main {
+    padding-bottom: 12.0rem;
 
+    @include md {
+        padding-bottom: 6.0rem;
+    }
     /*　フレックス子　*/
     flex: 1 0 auto;
 }

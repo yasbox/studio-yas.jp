@@ -46,15 +46,17 @@
 
 h3 {
     margin-top: 3.0rem;
-    padding: 0 1.6rem;
-    border-left: 10px solid $mycolor;
-    font-size: 1.6rem;
+    padding: 0 1.4rem;
+    border-left: 8px solid $mycolor;
+    font-size: 1.4rem;
 
     @include md {
         font-size: 1.4rem;
     }
 }
-
+p {
+    font-size: 1.0rem;
+}
 .wp-block-image {
     margin: 3.0rem 0 5.0rem !important;
     text-align: center;

@@ -1,0 +1,21 @@
+@import'modules/common';
+
+.container {
+    max-width: 800px;
+}
+.contents_box {
+    padding: 3.0rem 0;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1.0rem;
+}
+ul li {
+    font-size: 0.9rem;
+    color: $textlight;
+}

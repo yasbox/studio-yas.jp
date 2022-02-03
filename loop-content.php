@@ -4,7 +4,7 @@
     <a href="<?php the_permalink(); ?>">
         <div class="imgbox">
             <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('medium'); ?>
+                <?php the_post_thumbnail('large'); ?>
             <?php else : ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/images/noimage.png" alt="no-img" />
             <?php endif; ?>

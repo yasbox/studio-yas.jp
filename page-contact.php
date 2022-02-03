@@ -50,7 +50,8 @@ require_once(dirname(__FILE__) . '/sendMailPack/Controller/contactController.php
                     </div>
                 </form>
                 <p class="grecaptcha_info">
-                    このフォームは、Google reCAPTCHAによって保護されています。<a href="https://policies.google.com/privacy">ポリシー</a>及び<a href="https://policies.google.com/terms">利用規約</a>が適用されます。
+                    このフォームは、Google reCAPTCHAによって保護されています。<br>
+                    Googleの<a href="https://policies.google.com/privacy">ポリシー</a>及び<a href="https://policies.google.com/terms">利用規約</a>に加えて、当サイトの<a href="/policy">ポリシー</a>が適用されます。
                 </p>
             </div>
         </div>

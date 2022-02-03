@@ -6,7 +6,7 @@ register_nav_menu('footer-nav',  'フッターナビゲーション');
 
 // アイキャッチを有効化
 add_theme_support('post-thumbnails');
-set_post_thumbnail_size(160, 120, true);
+//set_post_thumbnail_size(300, 300);
 
 
 /* テーマカスタマイザー（ロゴ画像登録）

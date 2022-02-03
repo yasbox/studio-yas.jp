@@ -74,7 +74,7 @@
             </div>
         </div>
         <div class="bottom_space">
-            <div class="bottom_link"><a href="/#">プライバシーポリシー</a></div>
+            <div class="bottom_link"><a href="/policy">プライバシーポリシー</a></div>
             <div class="bottom_link copyright">@ <?php bloginfo('name'); ?></div>
         </div>
     </footer>

@@ -4,7 +4,7 @@ footer {
 
     a {
         color: #ccc;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     a:hover {
         color: #fff;
@@ -12,6 +12,10 @@ footer {
 
     .footer_contents {
         padding: 8.0rem 0 6.0rem;
+
+        @include md {
+            padding: 4.0rem 0 3.0rem;
+        }
 
         .logo_space {
             .site_logo {
@@ -44,7 +48,7 @@ footer {
             p {
                 margin: 5px 0;
                 font-size: 0.9rem;
-                color: #ccc;
+                color: #fff;
                 text-align: center;
             }
             .info {
