@@ -6,6 +6,9 @@ html {
     margin: 0px;
     box-sizing: border-box;
 }
+html :where(img) {
+    max-width: initial !important;
+}
 body {
     margin: 0px;
     color: $textbase;

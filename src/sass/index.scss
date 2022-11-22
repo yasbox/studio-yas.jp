@@ -1,5 +1,13 @@
 @import'modules/common';
 
+main {
+    padding-bottom: 0;
+
+    @include md {
+        padding-bottom: 0;
+    }
+}
+
 .fullscreen {
     position: relative;
 	top: 0px;

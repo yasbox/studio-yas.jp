@@ -18,12 +18,12 @@
     <div class="container">
         <div class="contents_box">
             <div class="row">
-                <div class="col-md box_center_center">
+                <div class="col-lg box_center_center">
                     <div class="box_left">
                         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/pc.png">
                     </div>
                 </div>
-                <div class="col-md box_center_center">
+                <div class="col-lg box_center_center">
                     <div class="box_right">
                         <div class="box_title">
                             <h3><span><?php bloginfo('name'); ?> は</span><br>

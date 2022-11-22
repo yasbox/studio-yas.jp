@@ -25,7 +25,7 @@
                     'posts_per_page' => 20, // 表示件数の指定
                     'orderby' => 'date', // 日付でソート
                     'order' => 'DESC', // DESCで最新から表示、ASCで最古から表示
-                    'category_name' => '制作実績' // 表示したいカテゴリーのスラッグを指定
+                    'category_name' => 'works' // 表示したいカテゴリーのスラッグを指定
                 );
 
                 $the_query = new WP_Query($args);
