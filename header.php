@@ -54,7 +54,7 @@ $includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true)
     <title><?php bloginfo('name'); ?><?php if (!is_home() && !is_front_page()) {
                                             echo '｜' . get_the_title();
                                         } else {
-                                            echo '｜長野市 ホームページ作成';
+                                            echo '｜長野市 フリーランスWEBエンジニア';
                                         } ?></title>
     <?php wp_head(); ?>
 </head>
