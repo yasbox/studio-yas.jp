@@ -21,10 +21,10 @@ require_once(dirname(__FILE__) . '/sendMailPack/Controller/completeController.ph
                 <div class="form_wrap">
                     <div class="box_text">
                         <p>
-                            確認用にご入力されたメールアドレス宛にも同様の内容のメールを自動送信しています。
+                            ご入力されたメールアドレス宛に返信いたします。
                         </p>
                         <p>
-                            <small>確認用メールが届いていない場合は、ご入力されたメールアドレスが正しくないか、迷惑メールに入っている可能性があります。<?= MAIL_FROM_ADDRESS ?> からのメールを受信可能な設定して頂きまして、再度送信して頂ますようよろしくお願い致します。</small>
+                            <small>迷惑メールに入らないよう、<?= MAIL_FROM_ADDRESS ?> からのメールを受信可能な設定してください。</small>
                         </p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ require_once(dirname(__FILE__) . '/sendMailPack/Controller/completeController.ph
                 <div class="form_wrap">
                     <div class="box_text">
                         <p>
-                            申し訳ありません。サーバートラブルまたはセキュリティー上に事情により送信できませんでした。時間をおいて再度お試しください。
+                            申し訳ありません。サーバートラブルまたはセキュリティー上の事情により送信できませんでした。時間をおいて再度お試しください。
                         </p>
                     </div>
                 </div>
