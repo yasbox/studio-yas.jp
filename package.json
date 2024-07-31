@@ -14,9 +14,9 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.3.1",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.2.0",
-    "glob": "^7.1.7",
+    "glob": "^11.0.0",
     "mini-css-extract-plugin": "^2.1.0",
     "postcss": "^8.3.6",
     "postcss-loader": "^6.1.1",
