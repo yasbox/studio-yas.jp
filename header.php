@@ -1,7 +1,7 @@
 <?php
-$commonCSSPath = '/dist/css/base.css';
-$singleCSSPath = '/dist/css/single.css';
-$includeCSSPath = '/dist/css/' . get_post_meta(get_the_ID(), 'includeCSS', true) . '.css';
+$commonCSSPath = '/dist/sass/base.css';
+$singleCSSPath = '/dist/sass/single.css';
+$includeCSSPath = '/dist/sass/' . get_post_meta(get_the_ID(), 'includeCSS', true) . '.css';
 ?>
 
 <!DOCTYPE html>
